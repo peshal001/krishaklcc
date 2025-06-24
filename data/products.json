@@ -1,0 +1,555 @@
+[
+  {
+    "id": "Toy-01",
+    "name": "Toy Product 1",
+    "price": 15.5,
+    "image": "images/products/toys1.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-02",
+    "name": "Toy Product 2",
+    "price": 18.0,
+    "image": "images/products/toys2.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-03",
+    "name": "Toy Product 3",
+    "price": 20.5,
+    "image": "images/products/toys3.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-04",
+    "name": "Toy Product 4",
+    "price": 23.0,
+    "image": "images/products/toys4.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-05",
+    "name": "Toy Product 5",
+    "price": 25.5,
+    "image": "images/products/toys5.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-06",
+    "name": "Toy Product 6",
+    "price": 28.0,
+    "image": "images/products/toys6.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-07",
+    "name": "Toy Product 7",
+    "price": 30.5,
+    "image": "images/products/toys7.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-08",
+    "name": "Toy Product 8",
+    "price": 33.0,
+    "image": "images/products/toys8.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-09",
+    "name": "Toy Product 9",
+    "price": 35.5,
+    "image": "images/products/toys9.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-10",
+    "name": "Toy Product 10",
+    "price": 38.0,
+    "image": "images/products/toys10.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-11",
+    "name": "Toy Product 11",
+    "price": 40.5,
+    "image": "images/products/toys11.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-12",
+    "name": "Toy Product 12",
+    "price": 43.0,
+    "image": "images/products/toys12.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-13",
+    "name": "Toy Product 13",
+    "price": 45.5,
+    "image": "images/products/toys13.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-13",
+    "name": "Toy Product 14",
+    "price": 45.5,
+    "image": "images/products/toys14.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "Toy-13",
+    "name": "Toy Product 15",
+    "price": 45.5,
+    "image": "images/products/toys15.jpg",
+    "category": "Toys And Games"
+  },
+  {
+    "id": "BEAUTY-01",
+    "name": "Beauty Care Product 1",
+    "price": 10,
+    "image": "images/products/beauty-care01.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-02",
+    "name": "Beauty Care Product 2",
+    "price": 12,
+    "image": "images/products/beauty-care02.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-03",
+    "name": "Beauty Care Product 3",
+    "price": 14,
+    "image": "images/products/beauty-care03.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-04",
+    "name": "Beauty Care Product 4",
+    "price": 16,
+    "image": "images/products/beauty-care04.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-05",
+    "name": "Beauty Care Product 5",
+    "price": 18,
+    "image": "images/products/beauty-care05.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-06",
+    "name": "Beauty Care Product 6",
+    "price": 20,
+    "image": "images/products/beauty-care06.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-07",
+    "name": "Beauty Care Product 7",
+    "price": 22,
+    "image": "images/products/beauty-care07.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-08",
+    "name": "Beauty Care Product 8",
+    "price": 24,
+    "image": "images/products/beauty-care08.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-09",
+    "name": "Beauty Care Product 9",
+    "price": 26,
+    "image": "images/products/beauty-care09.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-10",
+    "name": "Beauty Care Product 10",
+    "price": 28,
+    "image": "images/products/beauty-care10.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-11",
+    "name": "Beauty Care Product 11",
+    "price": 30,
+    "image": "images/products/beauty-care11.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "BEAUTY-12",
+    "name": "Beauty Care Product 12",
+    "price": 32,
+    "image": "images/products/beauty-care12.jpg",
+    "category": "Beauty Care"
+  },
+  {
+    "id": "KITCHEN-01",
+    "name": "Kitchen Product 1",
+    "price": 21.8,
+    "image": "images/products/kitchen01.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-02",
+    "name": "Kitchen Product 2",
+    "price": 23.6,
+    "image": "images/products/kitchen02.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-03",
+    "name": "Kitchen Product 3",
+    "price": 25.4,
+    "image": "images/products/kitchen03.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-04",
+    "name": "Kitchen Product 4",
+    "price": 27.2,
+    "image": "images/products/kitchen04.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-05",
+    "name": "Kitchen Product 5",
+    "price": 29.0,
+    "image": "images/products/kitchen05.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-06",
+    "name": "Kitchen Product 6",
+    "price": 30.8,
+    "image": "images/products/kitchen06.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-07",
+    "name": "Kitchen Product 7",
+    "price": 32.6,
+    "image": "images/products/kitchen07.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-08",
+    "name": "Kitchen Product 8",
+    "price": 34.4,
+    "image": "images/products/kitchen08.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-09",
+    "name": "Kitchen Product 9",
+    "price": 36.2,
+    "image": "images/products/kitchen09.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-10",
+    "name": "Kitchen Product 10",
+    "price": 38.0,
+    "image": "images/products/kitchen10.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-11",
+    "name": "Kitchen Product 11",
+    "price": 39.8,
+    "image": "images/products/kitchen11.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "KITCHEN-12",
+    "name": "Kitchen Product 12",
+    "price": 41.6,
+    "image": "images/products/kitchen12.jpg",
+    "category": "Home And Kitchen"
+  },
+  {
+    "id": "OFFICE-01",
+    "name": "Office Product 1",
+    "price": 33.2,
+    "image": "images/products/office-product01.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-02",
+    "name": "Office Product 2",
+    "price": 36.4,
+    "image": "images/products/office-product02.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-03",
+    "name": "Office Product 3",
+    "price": 39.6,
+    "image": "images/products/office-product03.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-04",
+    "name": "Office Product 4",
+    "price": 42.8,
+    "image": "images/products/office-product04.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-05",
+    "name": "Office Product 5",
+    "price": 46.0,
+    "image": "images/products/office-product05.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-06",
+    "name": "Office Product 6",
+    "price": 49.2,
+    "image": "images/products/office-product06.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-07",
+    "name": "Office Product 7",
+    "price": 52.4,
+    "image": "images/products/office-product07.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-08",
+    "name": "Office Product 8",
+    "price": 55.6,
+    "image": "images/products/office-product08.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-09",
+    "name": "Office Product 9",
+    "price": 58.8,
+    "image": "images/products/office-product09.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-10",
+    "name": "Office Product 10",
+    "price": 62.0,
+    "image": "images/products/office-product10.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-11",
+    "name": "Office Product 11",
+    "price": 65.2,
+    "image": "images/products/office-product11.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "OFFICE-12",
+    "name": "Office Product 12",
+    "price": 68.4,
+    "image": "images/products/office-product12.jpg",
+    "category": "Office Products"
+  },
+  {
+    "id": "PET-01",
+    "name": "Pet Supply Product 1",
+    "price": 17.5,
+    "image": "images/products/pet-supplies01.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-02",
+    "name": "Pet Supply Product 2",
+    "price": 20.0,
+    "image": "images/products/pet-supplies02.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-03",
+    "name": "Pet Supply Product 3",
+    "price": 22.5,
+    "image": "images/products/pet-supplies03.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-04",
+    "name": "Pet Supply Product 4",
+    "price": 25.0,
+    "image": "images/products/pet-supplies04.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-05",
+    "name": "Pet Supply Product 5",
+    "price": 27.5,
+    "image": "images/products/pet-supplies05.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-06",
+    "name": "Pet Supply Product 6",
+    "price": 30.0,
+    "image": "images/products/pet-supplies06.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-07",
+    "name": "Pet Supply Product 7",
+    "price": 32.5,
+    "image": "images/products/pet-supplies07.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-08",
+    "name": "Pet Supply Product 8",
+    "price": 35.0,
+    "image": "images/products/pet-supplies08.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-09",
+    "name": "Pet Supply Product 9",
+    "price": 37.5,
+    "image": "images/products/pet-supplies09.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-10",
+    "name": "Pet Supply Product 10",
+    "price": 40.0,
+    "image": "images/products/pet-supplies10.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-11",
+    "name": "Pet Supply Product 11",
+    "price": 42.5,
+    "image": "images/products/pet-supplies11.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-12",
+    "name": "Pet Supply Product 12",
+    "price": 45.0,
+    "image": "images/products/pet-supplies12.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "PET-13",
+    "name": "Pet Supply Product 13",
+    "price": 47.5,
+    "image": "images/products/pet-supplies13.jpg",
+    "category": "Pet Supplies"
+  },
+  {
+    "id": "house01",
+    "name": "House Product 1",
+    "price": 47.5,
+    "image": "images/products/house01.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house02",
+    "name": "House Product 2",
+    "price": 50.0,
+    "image": "images/products/house02.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house03",
+    "name": "House Product 3",
+    "price": 52.5,
+    "image": "images/products/house03.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house04",
+    "name": "House Product 4",
+    "price": 55.0,
+    "image": "images/products/house04.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house05",
+    "name": "House Product 5",
+    "price": 57.5,
+    "image": "images/products/house05.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house06",
+    "name": "House Product 6",
+    "price": 60.0,
+    "image": "images/products/house06.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house07",
+    "name": "House Product 7",
+    "price": 62.5,
+    "image": "images/products/house07.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house08",
+    "name": "House Product 8",
+    "price": 65.0,
+    "image": "images/products/house08.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house09",
+    "name": "House Product 9",
+    "price": 67.5,
+    "image": "images/products/house09.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house10",
+    "name": "House Product 10",
+    "price": 70.0,
+    "image": "images/products/house10.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house11",
+    "name": "House Product 11",
+    "price": 72.5,
+    "image": "images/products/house11.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house12",
+    "name": "House Product 12",
+    "price": 75.0,
+    "image": "images/products/house12.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house13",
+    "name": "House Product 13",
+    "price": 77.5,
+    "image": "images/products/house13.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house14",
+    "name": "House Product 14",
+    "price": 80.0,
+    "image": "images/products/house14.jpg",
+    "category": "Household Products"
+  },
+  {
+    "id": "house15",
+    "name": "House Product 15",
+    "price": 82.5,
+    "image": "images/products/house15.jpg",
+    "category": "Household Products"
+  }
+]

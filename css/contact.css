@@ -1,0 +1,241 @@
+/* Contact Page Styles */
+
+/* Contact Page Content */
+.contact-page-content {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Contact Details */
+.contact-details .subtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-details h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: var(--dark-color);
+}
+
+.contact-details p {
+  margin-bottom: 40px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: var(--light-gray);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-details ul li:hover {
+  transform: translateX(5px);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-details ul li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.contact-details ul li a {
+  color: var(--dark-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details ul li a:hover {
+  color: var(--primary-color);
+}
+
+.contact-details ul li span {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* Contact Form */
+.contact-form-container {
+  background: var(--light-gray);
+  padding: 50px 40px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-form-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: var(--font-family);
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: var(--dark-color);
+  transform: translateY(-2px);
+}
+
+/* Form Validation Styles */
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: #ff6b6b;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+  border-color: #51cf66;
+}
+
+/* Success Message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+
+/* Error Message */
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Loading State */
+.btn-primary.loading {
+  background: var(--text-color);
+  cursor: not-allowed;
+}
+
+.btn-primary.loading::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-details h2 {
+    font-size: 2em;
+  }
+
+  .contact-form-container {
+    padding: 30px 20px;
+  }
+
+  .contact-details ul li {
+    padding: 15px;
+  }
+
+  .contact-details ul li img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .contact-grid {
+    gap: 50px;
+  }
+
+  .contact-form-container {
+    padding: 40px 30px;
+  }
+}
