@@ -4,9 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>krrisak llc</title>
+  <title>Krrisak LLC</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    .btn:hover { filter: brightness(1.1); box-shadow: 0 4px 16px rgba(232,70,66,0.10); }
+    .feature { transition: box-shadow 0.2s, transform 0.2s; }
+    .feature:hover { box-shadow: 0 4px 16px rgba(232,70,66,0.10); transform: translateY(-3px); }
+    .category-card:hover { box-shadow: 0 4px 16px rgba(232,70,66,0.10); transform: translateY(-3px); }
+    @media (max-width: 900px) {
+      .business-section .container { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
+  </style>
 </head>
 
 <body>
@@ -16,7 +25,7 @@
 
   <main>
     <section class="hero">
-      <div class="swiper-container hero-slider">
+      <div class="swiper-container hero-slider animated" data-animate="animate-zoomIn">
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url('images/hero1.png')"></div>
           <div class="swiper-slide" style="background-image: url('images/hero2.png')"></div>
@@ -24,24 +33,22 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="hero-text-overlay">
+      <div class="hero-text-overlay animated" data-animate="animate-fadeIn">
         <div class="container">
-          <h1>Your trusted partner for everyday essentials</h1>
-          <p>
-            At krrisak llc, a product sales company, we supply top-quality essentials across beauty, pets products, office items, home and kitchen, health and households, and toys and games — all at unbeatable wholesale prices. Perfect for retailers, resellers, and bulk buyers. Shop smart. Stock better.
-          </p>
-          <div class="hero-buttons">
-            <a href="products.html?category=beauty" class="btn">beauty</a>
-            <a href="products.html?category=office+items" class="btn">office items</a>
+          <h1 class="animated" data-animate="animate-slideUp">Experience Wholesale, The Krrisak Way</h1>
+          <p class="animated" data-animate="animate-slideUp">Welcome to a new era of business sourcing. At Krrisak LLC, we handpick essentials for beauty, pets, office, home, health, and play—delivered with care, value, and a personal touch. Let's build your success together.</p>
+          <div class="hero-buttons animated" data-animate="animate-bounceIn">
+            <a href="products.html?category=beauty" class="btn">Browse Beauty Finds</a>
+            <a href="products.html?category=home+and+kitchen" class="btn">See Home & Kitchen</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="features mobile-hide">
+    <section class="features mobile-hide animated" data-animate="animate-fadeIn">
       <div class="container">
-        <div class="feature">
-          <div class="feature-icon">
+        <div class="feature animated" data-animate="animate-slideUp">
+          <div class="feature-icon animated" data-animate="animate-zoomIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
               stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -49,12 +56,12 @@
             </svg>
           </div>
           <div class="feature-text">
-            <h3>fast shipping</h3>
-            <p>quick delivery for every order</p>
+            <h3>Lightning-Fast Fulfillment</h3>
+            <p>Your orders are packed and shipped with speed and care.</p>
           </div>
         </div>
-        <div class="feature">
-          <div class="feature-icon">
+        <div class="feature animated" data-animate="animate-slideUp">
+          <div class="feature-icon animated" data-animate="animate-zoomIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
               stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -63,12 +70,12 @@
             </svg>
           </div>
           <div class="feature-text">
-            <h3>bulk discounts</h3>
-            <p>save more when buying in bulk</p>
+            <h3>Exclusive Bulk Deals</h3>
+            <p>Unlock special pricing and offers for your business.</p>
           </div>
         </div>
-        <div class="feature">
-          <div class="feature-icon">
+        <div class="feature animated" data-animate="animate-slideUp">
+          <div class="feature-icon animated" data-animate="animate-zoomIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
               stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -78,21 +85,21 @@
             </svg>
           </div>
           <div class="feature-text">
-            <h3>secure payments</h3>
-            <p>safe, encrypted, and hassle-free checkout</p>
+            <h3>Real People, Real Support</h3>
+            <p>Our team is here to help you, every step of the way.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="business-section" style="background:#fff; padding:48px 0 48px 0;">
+    <section class="business-section animated" data-animate="animate-fadeIn" style="background:#fff; padding:48px 0 48px 0;">
       <div class="container"
         style="max-width:1200px; display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center;">
-        <div style="position:relative;">
-          <img src="images/founder.jpg" alt="Business Woman"
+        <div style="position:relative;" class="animated" data-animate="animate-slideLeft">
+          <img src="images/founder.jpg" alt="Founder"
             style="width:100%; max-width:420px; border-radius:18px; box-shadow:0 8px 32px rgba(0,0,0,0.08);" />
           <div
-            class="trusted-customer-badge"
+            class="trusted-customer-badge animated" data-animate="animate-bounceIn"
             style="position:absolute; left:24px; bottom:-32px; background:#fff; border-radius:16px; box-shadow:0 4px 24px rgba(232,70,66,0.12); padding:28px 38px 18px 28px; display:flex; align-items:center; gap:18px; min-width:220px;"
           >
             <svg width="44" height="44" fill="none" stroke="#e84642" stroke-width="2.5" stroke-linecap="round"
@@ -106,151 +113,132 @@
               <div style="font-size:2em; font-weight:800; color:#222;">
                 1,485<span style="color:#e84642; font-size:0.7em; font-weight:700; vertical-align:super;">+</span>
               </div>
-              <div style="color:#888; font-size:1.08em; font-weight:500;">Trusted Customer</div>
+              <div style="color:#888; font-size:1.08em; font-weight:500;">Business Partners</div>
             </div>
           </div>
         </div>
-        <div style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:flex; flex-direction:column; gap:24px;" class="animated" data-animate="animate-slideUp">
           <div>
             <span
-              style="color:#e84642; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:1em;">about us</span>
-            <h2 style="font-size:2.8em; font-weight:900; margin:8px 0 18px 0; color:#111; line-height:1.1;">built for businesses.<br>powered by trust.</h2>
-            <p style="color:#555; font-size:1.15em; line-height:1.7; margin-bottom:18px;">At krrisak llc, a product sales company, we specialize in providing high-quality wholesale products across essential categories — beauty, pets products, office items, home and kitchen, health and households, and toys and games. Built with retailers and bulk buyers in mind, our store is designed to make sourcing easier, faster, and more affordable. We're more than just a supplier — we're your reliable wholesale partner.</p>
-            <p style="color:#555; font-size:1.08em; line-height:1.7;">With a user-friendly online shopping experience, competitive prices, and a commitment to customer satisfaction, krrisak llc helps your business grow with every order.</p>
+              style="color:#e84642; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:1em;">About Krrisak LLC</span>
+            <h2 style="font-size:2.2em; font-weight:900; margin:8px 0 18px 0; color:#111; line-height:1.1;">Your Growth, Our Commitment</h2>
+            <p style="color:#555; font-size:1.15em; line-height:1.7; margin-bottom:18px;">We're more than a supplier—we're your business ally. Our team is passionate about helping you find the right products, at the right price, with service you'll remember.</p>
+            <p style="color:#555; font-size:1.08em; line-height:1.7;">Join the Krrisak family and experience a partnership built on trust, transparency, and results.</p>
           </div>
           <div
-            style="background:#fff; border-radius:14px; box-shadow:0 4px 16px rgba(232,70,66,0.08); padding:28px 28px 18px 28px; max-width:420px;">
+            style="background:#fff; border-radius:14px; box-shadow:0 4px 16px rgba(232,70,66,0.08); padding:28px 28px 18px 28px; max-width:420px;" class="animated" data-animate="animate-zoomIn">
             <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:18px;">
               <li style="display:flex; align-items:center; gap:14px; font-size:1.13em; color:#222; font-weight:600;">
                 <svg width="26" height="26" fill="none" stroke="#e84642" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" viewBox="0 0 24 24">
                   <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>Verified Quality</li>
+                </svg>Handpicked Quality</li>
               <li style="display:flex; align-items:center; gap:14px; font-size:1.13em; color:#222; font-weight:600;">
                 <svg width="26" height="26" fill="none" stroke="#e84642" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" viewBox="0 0 24 24">
                   <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>Wholesale Prices</li>
+                </svg>Clear, Honest Pricing</li>
               <li style="display:flex; align-items:center; gap:14px; font-size:1.13em; color:#222; font-weight:600;">
                 <svg width="26" height="26" fill="none" stroke="#e84642" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" viewBox="0 0 24 24">
                   <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>Fast & Reliable Shipping</li>
+                </svg>On-Time Every Time</li>
               <li style="display:flex; align-items:center; gap:14px; font-size:1.13em; color:#222; font-weight:600;">
                 <svg width="26" height="26" fill="none" stroke="#e84642" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" viewBox="0 0 24 24">
                   <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>Bulk Order Support</li>
+                </svg>Support That Cares</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="featured-products">
+    <section class="featured-products animated" data-animate="animate-fadeIn">
       <div class="container">
-        <span>top selling products</span>
-        <h2>beauty</h2>
+        <span style="color:#e84642; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:1.1em;">Spotlight Products</span>
+        <h2 style="font-size:2em; font-weight:900; color:#111; margin-bottom:24px;" class="animated" data-animate="animate-slideUp">Beauty Bestsellers</h2>
         <div class="product-grid" id="featured-product-grid">
-          <!-- Products will be loaded here by JavaScript -->
+          <div class="product-card animated" data-animate="animate-zoomIn" style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(34,34,34,0.06); padding:18px; text-align:center; margin-bottom:18px;">
+            <img src="images/products/beauty-care01.jpg" alt="Glow Serum" style="width:100%; max-width:160px; border-radius:8px; margin-bottom:12px;" />
+            <h3 style="font-size:1.1em; font-weight:700; margin-bottom:4px;">Glow Serum</h3>
+            <div style="color:#888; font-size:0.98em; margin-bottom:6px;">$10.00</div>
+            <a href="https://wa.me/16164827086?text=I'm%20interested%20in%20Glow%20Serum" target="_blank" class="btn" style="background:#25d366; color:#fff; margin-top:8px;">Ask On WhatsApp</a>
+          </div>
+          <!-- Add more unique product cards as needed -->
         </div>
       </div>
     </section>
 
-    <section class="shop-by-category"
-      style="background: url('images/hero3.png') center/cover no-repeat; background-blend-mode: overlay; background-color: rgba(0,0,0,0.55); padding: 70px 0 70px 0;">
+    <section class="shop-by-category animated" data-animate="animate-fadeIn" style="background: url('images/hero3.png') center/cover no-repeat; background-blend-mode: overlay; background-color: rgba(0,0,0,0.55); padding: 70px 0 70px 0;">
       <div class="container" style="max-width:1200px;">
-        <span style="color:#e84642; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:1.1em;">our categories</span>
-        <h2 style="color:#fff; font-size:2.8em; font-weight:900; margin-bottom:38px;">shop by category</h2>
+        <span style="color:#e84642; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:1.1em;">Our Categories</span>
+        <h2 style="color:#fff; font-size:2.8em; font-weight:900; margin-bottom:38px;" class="animated" data-animate="animate-slideUp">Shop By Category</h2>
         <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:48px 32px;">
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <rect x="4" y="2" width="16" height="20" rx="2" />
-                <line x1="12" y1="18" x2="12" y2="18" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" /><line x1="12" y1="18" x2="12" y2="18" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">beauty</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">From skincare to grooming essentials, discover top-quality beauty products at wholesale prices — perfect for salons, stores, and beauty brands.</p>
-              <a href="products.html?category=beauty" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Beauty</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Discover trending skincare, haircare, and beauty essentials that keep your customers coming back.</p>
+              <a href="products.html?category=beauty" style="color:#fff; font-weight:600; text-decoration:none;">See Beauty Range <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <rect x="4" y="2" width="16" height="20" rx="2" />
-                <line x1="12" y1="18" x2="12" y2="18" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" /><line x1="12" y1="18" x2="12" y2="18" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">pets products</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Treat pets right with toys, grooming tools, and essentials for dogs, cats, and more — wholesale pricing for pet stores and distributors.</p>
-              <a href="products.html?category=pets+products" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Pets</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Everything for furry friends—treats, toys, and care products for happy, healthy pets.</p>
+              <a href="products.html?category=pets+products" style="color:#fff; font-weight:600; text-decoration:none;">Shop Pet Supplies <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <rect x="2" y="6" width="20" height="14" rx="2" />
-                <path d="M8 6V4a4 4 0 0 1 8 0v2" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M8 6V4a4 4 0 0 1 8 0v2" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">home and kitchen</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Upgrade everyday living with our collection of cookware, organizers, and household essentials — built for comfort and functionality.</p>
-              <a href="products.html?category=home+and+kitchen" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Home & Kitchen</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Smart solutions for every home—cookware, organizers, and essentials for modern living.</p>
+              <a href="products.html?category=home+and+kitchen" style="color:#fff; font-weight:600; text-decoration:none;">Browse Home & Kitchen <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="M6 8h12M6 12h12M6 16h12" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M6 8h12M6 12h12M6 16h12" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">office items</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Keep workspaces productive with reliable office supplies — from paper and pens to desk organizers and tech accessories.</p>
-              <a href="products.html?category=office+items" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Office</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">From pens to planners—find everything you need to keep your workspace running smoothly.</p>
+              <a href="products.html?category=office+items" style="color:#fff; font-weight:600; text-decoration:none;">Office Essentials <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <rect x="2" y="6" width="20" height="14" rx="2" />
-                <path d="M8 6V4a4 4 0 0 1 8 0v2" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M8 6V4a4 4 0 0 1 8 0v2" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">health and households</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Upgrade everyday living with our curated selection of home and kitchen products. Whether you're stocking a retail store or sourcing for a restaurant, we provide durable, functional, and stylish items that your customers will love. Find everything you need, from cookware to storage solutions, all at wholesale prices.</p>
-              <a href="products.html?category=health+and+households" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Health & Wellness</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Wellness and cleaning essentials for a healthier, happier environment.</p>
+              <a href="products.html?category=health+and+households" style="color:#fff; font-weight:600; text-decoration:none;">Health & Wellness <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
-          <div style="display:flex; flex-direction:row; align-items:flex-start; gap:22px;">
-            <div
-              style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;">
+          <div class="category-card animated" data-animate="animate-slideLeft" style="display:flex; flex-direction:row; align-items:flex-start; gap:22px; background:rgba(255,255,255,0.08); border-radius:10px; padding:18px; transition:box-shadow 0.2s,transform 0.2s;">
+            <div style="background:#e84642; border-radius:6px; width:68px; height:68px; display:flex; align-items:center; justify-content:center;" class="animated" data-animate="animate-zoomIn">
               <svg width="36" height="36" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" />
-                <rect x="9" y="9" width="6" height="6" />
-              </svg>
+                stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><rect x="9" y="9" width="6" height="6" /></svg>
             </div>
             <div>
-              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">toys and games</h3>
-              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Fun and learning for all ages—explore our range of toys and games, perfect for kids, families, and gift shops at wholesale prices.</p>
-              <a href="products.html?category=toys+and+games" style="color:#fff; font-weight:600; text-decoration:none;">read more <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
+              <h3 style="color:#fff; font-size:1.5em; font-weight:700; margin-bottom:8px;">Toys & Games</h3>
+              <p style="color:#fff; opacity:0.92; font-size:1.08em; margin-bottom:16px;">Playful picks for all ages—games, puzzles, and toys to inspire and entertain.</p>
+              <a href="products.html?category=toys+and+games" style="color:#fff; font-weight:600; text-decoration:none;">See Toys & Games <span style="font-size:1.2em; vertical-align:middle;">&rarr;</span></a>
             </div>
           </div>
         </div>

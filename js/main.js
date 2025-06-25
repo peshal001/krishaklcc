@@ -115,6 +115,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // === Homepage Animations ===
+    const animatedElements = document.querySelectorAll('.animated');
+    if ('IntersectionObserver' in window && animatedElements.length > 0) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const animation = el.dataset.animate || 'animate-fadeIn';
+                    el.classList.add(animation);
+                    el.classList.remove('animated');
+                    obs.unobserve(el);
+                }
+            });
+        }, { threshold: 0.15 });
+        animatedElements.forEach((el, i) => {
+            // Add staggered delay if not already set
+            if (!el.classList.contains('delay-1') && !el.classList.contains('delay-2') && !el.classList.contains('delay-3') && !el.classList.contains('delay-4') && !el.classList.contains('delay-5')) {
+                el.classList.add('delay-' + ((i % 5) + 1));
+            }
+            observer.observe(el);
+        });
+    }
 });
 
 // Need to add product card styles to style.css
