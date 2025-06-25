@@ -39,30 +39,186 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <style>
+      .contact-company-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(34,34,34,0.08);
+        padding: 36px 32px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .contact-company-card img {
+        width: 90px;
+        height: 90px;
+        border-radius: 16px;
+        margin-bottom: 18px;
+        object-fit: contain;
+        background: #f9fafb;
+        box-shadow: 0 2px 8px rgba(34,34,34,0.07);
+      }
+      .contact-company-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+        color: var(--primary-color);
+      }
+      .contact-company-card p {
+        color: #666;
+        font-size: 1.08em;
+        margin-bottom: 0;
+      }
+      .contact-card-wrap {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .contact-card-main {
+        flex: 2 1 400px;
+        min-width: 320px;
+      }
+      .contact-card-sidebar {
+        flex: 1 1 260px;
+        min-width: 260px;
+        max-width: 340px;
+      }
+      @media (max-width: 900px) {
+        .contact-card-wrap {
+          flex-direction: column;
+          gap: 0;
+        }
+        .contact-card-sidebar {
+          max-width: 100%;
+          margin-bottom: 32px;
+        }
+      }
+      .contact-map-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(34,34,34,0.08);
+        padding: 24px;
+        margin-top: 48px;
+      }
+      .contact-map-card h2 {
+        margin-top: 0;
+        margin-bottom: 18px;
+        font-size: 1.3em;
+        color: var(--primary-color);
+      }
+      .contact-map-card iframe {
+        border-radius: 12px;
+        border: none;
+      }
+      .contact-company-card, .contact-details, .contact-form-container, .contact-map-card {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeInUp 0.8s cubic-bezier(.77,0,.18,1) forwards;
+      }
+      .contact-company-card { animation-delay: 0.1s; }
+      .contact-details { animation-delay: 0.3s; }
+      .contact-form-container { animation-delay: 0.5s; }
+      .contact-map-card { animation-delay: 0.7s; }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .contact-company-card {
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .contact-company-card:hover {
+        box-shadow: 0 8px 32px rgba(34,34,34,0.16);
+        transform: translateY(-4px) scale(1.03);
+      }
+      .contact-details {
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .contact-details:hover {
+        box-shadow: 0 8px 32px rgba(34,34,34,0.10);
+        transform: translateY(-2px) scale(1.01);
+      }
+      .contact-form-container {
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .contact-form-container:hover {
+        box-shadow: 0 8px 32px rgba(34,34,34,0.10);
+        transform: translateY(-2px) scale(1.01);
+      }
+      .contact-map-card {
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .contact-map-card:hover {
+        box-shadow: 0 8px 32px rgba(34,34,34,0.10);
+        transform: translateY(-2px) scale(1.01);
+      }
+      /* Cool animated gradient border for the company card */
+      .contact-company-card {
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-company-card::before {
+        content: '';
+        position: absolute;
+        inset: -3px;
+        z-index: 0;
+        border-radius: 18px;
+        background: linear-gradient(120deg, #e84642, #ffb347, #51cf66, #e84642 90%);
+        background-size: 200% 200%;
+        animation: borderGradient 3s linear infinite;
+        opacity: 0.18;
+      }
+      .contact-company-card > * { position: relative; z-index: 1; }
+      @keyframes borderGradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      /* Fun input focus effect */
+      .contact-form-container input:focus, .contact-form-container textarea:focus {
+        box-shadow: 0 0 0 2px #e8464233;
+        border-color: #e84642;
+      }
+      /* Button pulse on hover */
+      .btn-primary:hover {
+        animation: btnPulse 0.4s;
+      }
+      @keyframes btnPulse {
+        0% { box-shadow: 0 0 0 0 #e8464233; }
+        70% { box-shadow: 0 0 0 10px #e8464200; }
+        100% { box-shadow: 0 0 0 0 #e8464200; }
+      }
+    </style>
   </head>
   <body>
     <header id="header-placeholder"></header>
 
     <main>
-      <section class="page-header">
-        <div class="container">
-          <h1>contact us</h1>
-          <div class="breadcrumb">
-            <a href="index.html">home</a> &gt; contact
+      <section class="page-header" style="padding: 32px 0 12px 0; background: #fff;">
+        <div class="container" style="max-width:700px;">
+          <h2 style="font-size:2em; font-weight:800; margin-bottom:8px; color:#222; letter-spacing:-1px;">contact us</h2>
+          <div class="breadcrumb" style="font-size:1em; color:#888; display:flex; align-items:center; gap:6px;">
+            <a href="index.html" style="color:var(--primary-color); font-weight:600;">home</a>
+            <span style="color:#bbb; font-size:1.1em;">&gt;</span>
+            <span style="color:#555;">contact</span>
           </div>
         </div>
+        <div style="height:1px; background:#f0f1f3; margin-top:18px;"></div>
       </section>
 
-      <section class="contact-page-content section-padding">
+      <section class="contact-page-content section-padding" style="background: #f5f7fa;">
         <div class="container">
-          <div class="contact-intro">
-            <h2>we'd love to hear from you</h2>
-            <p>Whether you have a question about products, pricing, or anything else, our team at krrisak llc (a product sales company) is ready to answer all your questions. Reach out and we'll respond as soon as we can!</p>
-          </div>
-          <div class="contact-grid">
-            <div class="contact-visual">
-              <img src="images/founder.jpg" alt="Contact Illustration" />
-              <div class="contact-details">
+          <div class="contact-card-wrap">
+            <div class="contact-card-sidebar">
+              <div class="contact-company-card">
+                <img src="images/logo.png" alt="krrisak llc logo" />
+                <h2>krrisak llc</h2>
+                <p>your trusted product sales company for beauty, pets products, office items, home and kitchen, health and households, and toys and games.</p>
+              </div>
+              <div class="contact-details" style="background:#f9fafb; border-radius:12px; box-shadow:0 2px 8px rgba(34,34,34,0.04); padding:24px 18px;">
                 <ul>
                   <li>
                     <img src="images/icons/phone.svg" alt="Phone" />
@@ -88,59 +244,62 @@
                 </ul>
               </div>
             </div>
-            <div class="contact-form-container">
-              <h3>send us a message</h3>
-              <p>Fill out the form below and our team will get back to you as soon as possible.</p>
-              <form action="#">
-                <div class="form-group">
-                  <label for="name">name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="your name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="your email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message">message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="type your message here..."
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">send message</button>
-              </form>
+            <div class="contact-card-main">
+              <div class="contact-intro" style="margin-bottom:32px;">
+                <h2 style="font-size:2em; color:var(--primary-color); margin-bottom:10px;">we'd love to hear from you</h2>
+                <p style="font-size:1.1em; color:#444;">Whether you have a question about products, pricing, or anything else, our team at krrisak llc (a product sales company) is ready to answer all your questions. Reach out and we'll respond as soon as we can!</p>
+              </div>
+              <div class="contact-form-container">
+                <h3>send us a message</h3>
+                <p style="text-align:center; color:#888; margin-bottom:28px;">Fill out the form below and our team will get back to you as soon as possible.</p>
+                <form action="#">
+                  <div class="form-group">
+                    <label for="name">name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="type your message here..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">send message</button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="contact-map-section">
-        <div class="container">
-          <h2>our location</h2>
-          <div class="contact-map-embed">
-            <iframe
-              src="https://www.google.com/maps?q=903+Prairie+Ridge+Ln+Arlington+TX+76005+USA&output=embed"
-              width="100%" height="400"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="krrisak llc location map"
-            ></iframe>
+          <div class="contact-map-card">
+            <h2>our location</h2>
+            <div class="contact-map-embed">
+              <iframe
+                src="https://www.google.com/maps?q=903+Prairie+Ridge+Ln+Arlington+TX+76005+USA&output=embed"
+                width="100%" height="400"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="krrisak llc location map"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
