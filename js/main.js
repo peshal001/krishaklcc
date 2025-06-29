@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="product-info">
                     <h3 class="product-title">${product.name}</h3>
                     <p class="product-price">$${product.price.toFixed(2)}</p>
-                    <a href="https://wa.me/16164827086?text=${encodeURIComponent(`I'm interested in: ${product.name}`)}" class="btn add-to-cart-btn" target="_blank">Query on WhatsApp</a>
+                    <a href="https://wa.me/16164827086?text=${encodeURIComponent(`Product Inquiry: Order: ${product.category}: ${product.name}: ${product.id}: $${product.price.toFixed(2)}%0AProduct Detail: https://krrisak.com/products.html?code=${product.id}`)}" class="btn add-to-cart-btn" target="_blank">Query Now</a>
                 </div>
             </div>
         `).join('');
